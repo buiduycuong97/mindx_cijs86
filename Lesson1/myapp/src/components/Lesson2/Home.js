@@ -1,9 +1,11 @@
 import React from "react";
 
-const Home = () => {
-  const name = "Mindx";
-
-  return <div>Hello {name}</div>;
+const Home = (props) => {
+  return (
+    <div>
+      <div>Hello {props.name}</div>
+    </div>
+  );
 };
 
 export default Home;

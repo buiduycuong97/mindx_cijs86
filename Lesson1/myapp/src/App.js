@@ -1,11 +1,13 @@
-import Home from "./components/Lesson2/Home.js";
+import Count from "./components/Lesson5/Count";
+import UseEffect from "./components/Lesson5/UseEffect";
+import { ThemeProvider } from "./components/Lesson6/Context";
+import Themes from "./components/Lesson6/Themes.js";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Home></Home>
-    </div>
+    <ThemeProvider>
+      <Themes></Themes>
+    </ThemeProvider>
   );
-}
-
+};
 export default App;
